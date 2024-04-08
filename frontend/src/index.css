@@ -1,0 +1,144 @@
+/* index.css */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5; /* Soft Grey */
+  color: #333840; /* Dark Charcoal */
+  transition: background-color 0.5s ease;
+}
+
+a,
+.link-back {
+  color: #6200ee; /* Deep Sky Blue */
+  text-decoration: none;
+}
+
+a:hover,
+.link-back:hover {
+  color: #883ef0; /* Darker shade of Deep Sky Blue for hover effect */
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App-header {
+  padding: 20px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  color: #6200ee;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.option {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.highlight {
+  color: #6200ee; /* Vivid Purple for light theme */
+  font-weight: bold;
+}
+
+/* Or any other styles you want for dark theme */
+.dark-theme .highlight {
+  color: #bb86fc; /* Light Purple for dark theme */
+}
+button {
+  background-color: #6200ee; /* Deep Sky Blue */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #883ef0; /* Darker shade of Deep Sky Blue */
+}
+button:disabled {
+  background-color: #cbd2d9; /* Light grey to indicate it's disabled */
+  color: #9ea7ad; /* Darker grey for text to show it's not active */
+  cursor: not-allowed; /* Change cursor to indicate the button is disabled */
+  border: 1px solid #cbd2d9; /* Optional: adjust border color for disabled state */
+}
+
+/* Optional: Prevent the hover effect on disabled buttons */
+button:disabled:hover {
+  background-color: #cbd2d9; /* Keep the same color on hover */
+}
+input,
+input[type="file"] {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ffffff; /* White */
+  border: 1px solid #cbd2d9; /* Light grey border */
+  color: #333840; /* Dark Charcoal */
+  width: calc(100% - 22px); /* Full width minus padding and border */
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.format-note {
+  color: #dc143c; /* Crimson for alerts or errors */
+  font-size: 0.9rem; /* Smaller font size for a subtle note */
+  margin-top: 5px; /* Spacing above the note */
+}
+
+h1 {
+  color: #6200ee; /* Deep Sky Blue */
+}
+
+div {
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff; /* White background for containers */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Soft rounded corners */
+}
+
+.alert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #dc143c; /* Crimson for alerts or errors */
+}
+.success-message {
+  width: fit-content;
+  /* margin-left: 100px; */
+  color: #4caf50; /* Green */
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Add more classes for specific layout adjustments and responsive design */
