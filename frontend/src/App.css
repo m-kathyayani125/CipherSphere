@@ -1,0 +1,8 @@
+/* App.css */
+
+/* Add position relative to the container holding the SVGs */
+.App {
+  position: relative;
+}
+
+/* Position the SVGs absolutely */
