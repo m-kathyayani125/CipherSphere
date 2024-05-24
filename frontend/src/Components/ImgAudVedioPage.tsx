@@ -287,12 +287,6 @@ function ImagePage() {
                 <h5>{fileError}</h5>
               </div>
             )} */}
-            {fileError && (
-              <div className="alert">
-                <img src="../../notify.svg" alt="" className="alert-image" />
-                <h5>{fileError}</h5>
-              </div>
-            )}
 
             <p className="format-note">
               Please upload a file in{" "}
@@ -325,7 +319,14 @@ function ImagePage() {
               </>
             </span>
           </div>
-          <img className="image3" src="../../Image upload.gif" alt="" />
+          {fileError ? (
+            <div className="alert">
+              <img src="../../notify.svg" alt="" className="alert-image" />
+              <h5>{fileError}</h5>
+            </div>
+          ) : (
+            <img className="image3" src="../../Image upload.gif" alt="" />
+          )}
         </div>
         <div className="back-button-container">
           <Link to="/">
