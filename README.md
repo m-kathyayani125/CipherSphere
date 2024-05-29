@@ -104,4 +104,31 @@ Once both frontend and backend servers are running, you can interact with the ap
 
 Use samples from the `Inputs` folder to implement the code or provide input data for testing.
 
+## Project Screenshots
+Here are some key screenshots from various stages of the project:
+
+Home Screen:
+
+![Homepage](Screenshots/Homepage.jpg)
+
+
+Encryption Interface:
+
+![Encryption](Screenshots/Encryption.jpg)
+
+
+Decryption Interface:
+
+![Decryption](Screenshots/Decryption.jpg)
+
+
+Text Encryption Results:
+
+![Text Encryption](Screenshots/TextEncryption.jpg)
+
+
+Wrong file format uploaded:
+
+![Wrong upload](Screenshots/WrongUpload.jpg)
+
 Feel free to modify the code and experiment with the project!
